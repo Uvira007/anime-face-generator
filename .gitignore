@@ -1,0 +1,11 @@
+# Byte-compiled
+__pycache__/
+*.py[cod]
+
+# Environments
+.venv
+venv
+.env
+venv/
+.venv/
+venv.bak
