@@ -1,0 +1,3 @@
+# version independant
+pytorch == 2.9.1
+torchinfo == 1.8.0
