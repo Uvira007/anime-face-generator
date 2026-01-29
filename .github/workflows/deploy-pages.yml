@@ -42,14 +42,9 @@ jobs:
         # Use the API URL from secrets or default to a placeholder
         # Users need to set this in GitHub secrets after deploying their API
         VITE_API_URL: ${{ secrets.API_URL || 'https://anime-face-generator-hqev.onrender.com' }}
-        # Set base path for Github pages (use repo name if not root)
-        VITE_BASE_PATH: ${{ secrets.BASE_PATH || '/anime-face-generator/' }}
       run: |
         cd frontend
-        echo "VITE_BASE_PATH length (masked if from secret): ${#VITE_BASE_PATH}"
         npm run build
-        echo "--- Assets URL in built index.html (should contain /anime-face-generator/) ---"
-        grep -oE '(src|href)="[^"]*"' dist/index.html || true
 
     - name: Setup pages
       uses: actions/configure-pages@v4
