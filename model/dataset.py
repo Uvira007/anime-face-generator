@@ -188,10 +188,12 @@ def download_dataset(output_dir: str = "./data/anime_faces",
     """
     
     try:
+        from dotenv import load_dotenv
+        load_dotenv()
         import kaggle
         output_path = Path(output_dir)
         output_path.mkdir(parents=True, exist_ok=True)
-
+        api_token = os.getenv('KAGGLE_API_TOKEN')
         print(f"Downloading dataset '{kaggle_dataset}' to '{output_path.resolve()}'...")
 
         # download and unzip the dataset
@@ -239,3 +241,6 @@ def visualize_batch(dataloader: DataLoader, num_images: int = 64, save_path: Opt
         plt.savefig(save_path, bbox_inches='tight', dpi = 150)
         print(f"Saved visualization to {save_path}")
     plt.show()
+
+if __name__ == "__main__":
+    temp = AnimeFaceDataset()

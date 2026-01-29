@@ -1,0 +1,31 @@
+# DCGAN Training Requirements
+# Compatible with Azure Databricks 14.3 LTS (Python 3.10)
+
+# Core Deep Learning
+torch>=2.0.0
+torchvision>=0.15.0
+
+# ONNX Export & Optimization
+onnx>=1.14.0
+onnxruntime>=1.15.0
+
+# Data Processing
+numpy>=1.24.0
+Pillow>=9.5.0
+opencv-python>=4.7.0
+
+# Visualization
+matplotlib>=3.7.0
+tqdm>=4.65.0
+
+# Utilities
+pyyaml>=6.0
+requests>=2.31.0
+kaggle>=1.5.0
+python-dotenv>=1.0.0  # Optional: For .env file support
+
+# Optional: For Databricks
+# These are typically pre-installed in Databricks runtime
+# pandas>=2.0.0
+# scipy>=1.10.0
+
