@@ -173,7 +173,7 @@ def download_dataset(output_dir: str = "./data/anime_faces",
     Download the anime dataset from Kaggle.
 
     Prerequisites:
-        - Kaggle API credentials configured (~/.kaggle/kaggle.json)
+        - Kaggle API credentials configured (../.env)
         - kaggle package installed (pip install kaggle)
 
     Args:
