@@ -52,9 +52,7 @@ Through adversarial training, the generator learns to produce increasingly reali
 <div align="center">
 <i>After 100 epochs of training, the generator produces anime faces like these:</i>
 
-```
-[Sample images would appear here after training]
-```
+![Generated anime face (50 epochs)](docs/images/generated_anime_image.png)
 </div>
 
 ### Latent Space Interpolation
@@ -62,9 +60,7 @@ Through adversarial training, the generator learns to produce increasingly reali
 <div align="center">
 <i>Smooth transition between two faces by interpolating in latent space:</i>
 
-```
-Face A → [intermediate steps] → Face B
-```
+![Face morphing sequence](docs/images/interpolation_sequence.png)
 </div>
 
 ---
